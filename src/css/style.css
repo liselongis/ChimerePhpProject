@@ -1,0 +1,45 @@
+/*
+
+
+body {
+  background-color: rgb(54, 124, 148);
+}
+
+
+h1 {
+  color: rgb(66, 58, 179);
+  text-align: center;
+}
+
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+*/
+
+
+.bg-dark {
+  overflow: visible !important;
+  background-color: #d3c6bd !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+}
+
+
+header {
+  margin-bottom: 100px !important;
+}
+
+
+body {
+  background-color: #8b8075   !important;
+}
+
+.formulaire {
+  margin-left: auto   !important;
+  margin-right: auto   !important;
+}
