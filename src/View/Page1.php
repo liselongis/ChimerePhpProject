@@ -1,5 +1,5 @@
 <!-- L'en-tête -->
-<?php include("header.php"); ?>
+<?php include("../Includes/header.php"); ?>
 
 <!-- Le corps -->
     
@@ -9,19 +9,19 @@
                 <div class="row">
 
                     <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
-                        <h1> Page 3 </h1>
+                        <h1> Page 1 </h1>
                         <p> Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta. <br /> </p>
                         <button type="button" class="btn btn-outline-dark">Dark Button 1</button>
                     </article>
 
                     <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
-                        <h1> Page 3 </h1>
+                        <h1> Page 1 </h1>
                         <p> Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta. <br /> </p>
                         <button type="button" class="btn btn-outline-dark">Dark Button 2</button>
                     </article>
 
                     <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
-                        <h1> Page 3 </h1>
+                        <h1> Page 1 </h1>
                         <p> Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta. <br /> </p>
                         <button type="button" class="btn btn-outline-dark">Dark Button 3</button>
                     </article>
@@ -33,4 +33,4 @@
 
 
 <!-- pied de page -->
-<?php include("footer.php"); ?>
+<?php include("../Includes/footer.php"); ?>

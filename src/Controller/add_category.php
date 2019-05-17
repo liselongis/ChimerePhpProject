@@ -17,6 +17,6 @@ $r->bindParam(":nom", $nom);
 $r->execute();
 
 //Je retourne à l'index
-header("location: ../index-1.php");
+header("location: ../View/Index.php");
 
 

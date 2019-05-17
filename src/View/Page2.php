@@ -1,5 +1,5 @@
 <!-- L'en-tête -->
-<?php include("header.php"); ?>
+<?php include("../Includes/header.php"); ?>
 
 <!-- Le corps -->
     
@@ -33,4 +33,4 @@
 
 
 <!-- pied de page -->
-<?php include("footer.php"); ?>
+<?php include("../Includes/footer.php"); ?>

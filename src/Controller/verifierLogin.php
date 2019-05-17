@@ -1,5 +1,5 @@
 <?php
-include_once "../config.php";
+include_once "config.php";
 
 $email_utilisateur=filter_input(INPUT_POST, "email_utilisateur");
 $mdp=filter_input(INPUT_POST, "mdp");
@@ -38,28 +38,28 @@ else{
 //Si l'id_metier est égale à XXX alors appeler une page de l'id_metier
 
     if($employe["id_metier"]==1){
-        header("Location: ../page1.php");
+        header("Location: ../View/Page1.php");
     }
 
     elseif($employe["id_metier"]==2){
-        header("Location: ../page2.php");
+        header("Location: ../View/Page2.php");
     }
 
     elseif($employe["id_metier"]==3){
-        header("Location: ../page3.php");
+        header("Location: ../View/Page3.php");
     }
 
     elseif($employe["id_metier"]==4){
-        header("Location: ../page4.php");
+        header("Location: ../View/Page4.php");
     }
 
     elseif($employe["id_metier"]==5){
-        header("Location: ../page5.php");
+        header("Location: ../View/Page5.php");
     }
 
     else
     {
-        header("Location: ../pageEmploye.php");
+        header("Location: ../View/PageEmploye.php");
     }
 
     //Je retourne à l'index

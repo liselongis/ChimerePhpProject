@@ -7,12 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
         <title>Bijouterie</title>
     </head>
@@ -39,23 +35,23 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="page1.php"> Page 1</a>
+        <a class="nav-link" href="../View/page1.php"> Page 1</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="page2.php"> Page 2</a>
+        <a class="nav-link" href="../View/page2.php"> Page 2</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="page3.php"> Page 3</a>
+        <a class="nav-link" href="../View/page3.php"> Page 3</a>
       </li>
 
     </ul>
 
       <span class="navbar-text actions">
-          <a class="btn btn-secondary" role="button" href="inscription.php">Inscription</a>
+          <a class="btn btn-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
           &nbsp;
-          <a class="btn btn-dark" role="button" href="login.php">Connexion</a>
+          <a class="btn btn-dark" role="button" href="../Controller/login.php">Connexion</a>
       </span>
 
   </div>

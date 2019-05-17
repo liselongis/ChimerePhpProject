@@ -1,5 +1,5 @@
 <!-- L'en-tête -->
-<?php include("header.php"); ?>
+<?php include("../Includes/header.php"); ?>
 
 
     <div class="container">
@@ -49,7 +49,7 @@
         <div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6">
 
 <h1>Identifiez-vous</h1>
-    <form action="actions/verifierLogin.php" method="POST">
+    <form action="verifierLogin.php" method="POST">
         Email : <input type="email" name="email"><br>
         Mot de passe <input type="password" name="mdp"><br>
         <input type="submit" value="OK">
@@ -71,4 +71,4 @@
 
 
 <!-- pied de page -->
-<?php include("footer.php"); ?>
+<?php include("../Includes/footer.php"); ?>
