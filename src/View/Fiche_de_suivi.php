@@ -27,11 +27,10 @@
         <div class="form-group">
             <label for="etat">Etat</label>
                 <select class="form-control" id="etat">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>Comme neuf</option>
+                <option>Très bon état</option>
+                <option>Bon état</option>
+                <option>État correct</option>
                 </select>
         </div>
 
@@ -39,21 +38,25 @@
         <div class="form-group">
             <label for="metier_actuel">Métier actuel</label>
                 <select class="form-control" id="metier_actuel">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>Fondeur/Mouleur</option>
+                <option>Polisseur</option>
+                <option>Tailleur</option>
+                <option>Sertisseur</option>
+                <option>Chef d'Atelier</option>
                 </select>
         </div>
 
 
-              <div class="form-group"> <label></label>
-                <input type="text" class="form-control" placeholder="Nombre d'heure">
-              </div>
-              <div class="form-group"> <label></label>
-                <input type="email" class="form-control" placeholder="Commentaire">
-              </div>
+            <div class="form-group"> <label>Nombre d'heure</label>
+                <input type="text" class="form-control" placeholder="">
+            </div>
+
+
+            <div class="form-group">
+                <label for="commentaire">Commentaire</label>
+                <textarea class="form-control" id="commentaire" rows="3"></textarea>
+            </div>
+
 
               <br>
               <button type="submit" class="btn btn-block btn-dark btn-lg" >OK</button>
