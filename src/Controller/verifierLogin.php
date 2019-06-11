@@ -7,6 +7,7 @@ $mdp=filter_input(INPUT_POST, "mdp");
 //Je crée une connexion à la BDD
 $db=new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASE.";port=".Config::PORT
 , Config::USER, Config::MDP);
+
 //je prépare une requete
 $r=$db->prepare("select * from UTILISATEUR where email_utilisateur=:email_utilisateur and mdp=:mdp");
 $r->bindParam(":email_utilisateur", $email_utilisateur);
@@ -19,50 +20,16 @@ $r->execute();
 $lignes=$r->fetchAll();
 
 
-//S'il n'y a pas de ligne : retour à l'index
-if (count($lignes)==0){
-    header("Location: ../login.php?erreur=1");
-}
-
-//Sinon, c'est que j'ai trouvé l'utilisateur
-
-else{
-    $employe=$lignes[0];
+if (count($lignes) > 0){
+        $employe=$lignes[0];
 
 
     //je stocke en session que c'est bon
     session_start();
     $_SESSION["logged"]="oui";
-    
+    $_SESSION["employe"]=$employe;
 
-//Si l'id_metier est égale à XXX alors appeler une page de l'id_metier
+    include_once "RedirectInit.php";
 
-    if($employe["id_metier"]==1){
-        header("Location: ../View/Page1.php");
-    }
-
-    elseif($employe["id_metier"]==2){
-        header("Location: ../View/Page2.php");
-    }
-
-    elseif($employe["id_metier"]==3){
-        header("Location: ../View/Page3.php");
-    }
-
-    elseif($employe["id_metier"]==4){
-        header("Location: ../View/Page4.php");
-    }
-
-    elseif($employe["id_metier"]==5){
-        header("Location: ../View/Page5.php");
-    }
-
-    else
-    {
-        header("Location: ../View/PageEmploye.php");
-    }
-
-    //Je retourne à l'index
-    
 }
-
+header("Location: login.php?erreur=1");

@@ -1,31 +1,34 @@
 <!-- L'en-tête -->
-<?php include("../Includes/header.php"); ?>
+<?php include("../Includes/header.php"); 
+session_start();
+include_once "RedirectInit.php";
+?>
 
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row" style="">
         <div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6" style="">
-          <form class="">
-            <div class="form-group"> <label></label>
-              <input type="text" class="form-control" placeholder="Prénom">
-            </div>
-            <div class="form-group"> <label></label>
-              <input type="text" class="form-control" placeholder="Nom">
-            </div>
-            <div class="form-group"> <label></label>
-              <input type="text" class="form-control" placeholder="Métier">
-            </div>
-            <div class="form-group"> <label></label>
-              <input type="email" class="form-control" placeholder="Adresse Email">
-            </div>
-            <div class="form-group"> <label></label>
-              <input type="password" class="form-control" placeholder="Mot de passe">
-            </div>
-            <div class="form-group"> <label></label>
-              <input type="password" class="form-control" placeholder="Confirmation du mot de passe">
-            </div>
-            <br>
-            <button type="submit" class="btn btn-block btn-dark btn-lg" >OK</button>
+          <form class="inscription" method="POST" action="../Controller/inscrire.php">
+              <div class="form-group"> <label></label>
+                <input type="text" class="form-control" placeholder="Prénom">
+              </div>
+              <div class="form-group"> <label></label>
+                <input type="text" class="form-control" placeholder="Nom">
+              </div>
+              <div class="form-group"> <label></label>
+                <input type="text" class="form-control" placeholder="Métier">
+              </div>
+              <div class="form-group"> <label></label>
+                <input type="email" class="form-control" placeholder="Adresse Email">
+              </div>
+              <div class="form-group"> <label></label>
+                <input type="password" class="form-control" placeholder="Mot de passe">
+              </div>
+              <div class="form-group"> <label></label>
+                <input type="password" class="form-control" placeholder="Confirmation du mot de passe">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-block btn-dark btn-lg" >OK</button>
           </form>
         </div>
       </div>

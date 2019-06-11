@@ -2,31 +2,43 @@
 <?php require '../Includes/header.php'; ?>
 
 <!-- Le corps -->
-    
-    <div id="corps">
+
+    <div id="">
         <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-
-                    <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
-                        <h1> Bijouterie </h1>
-                        <p> Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta. <br /> </p>
-                        <button type="button" class="btn btn-outline-dark">Dark Button 1</button>
+            <div class="row">
+                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
+                        <button type="button" class="btn btn-outline-dark">
+                            <img style="width:100%" src="../Pictures/document.png" alt="Logo-Chimere"/>
+                        </button>
                     </article>
 
-                    <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
-                        <h1> Bijouterie </h1>
-                        <p> Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta. <br /> </p>
-                        <button type="button" class="btn btn-outline-dark">Dark Button 2</button>
-                    </article>
 
-                    <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
-                        <h1> Bijouterie </h1>
-                        <p> Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta. <br /> </p>
-                        <button type="button" class="btn btn-outline-dark">Dark Button 3</button>
+                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
+                        <button type="button" class="btn btn-outline-dark">
+                            <img style="width:100%" src="../Pictures/file.png" alt="Logo-Chimere"/>
+                        </button>
                     </article>
+            </div>
+        </div>
+    </div>
 
-                </div>
+    <br>
+    <br>
+    <br>
+
+    <div id="">
+        <div class="container-fluid">
+            <div class="row">
+                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
+                        <button type="button" class="btn btn-outline-dark">
+                            <img style="width:100%" src="../Pictures/past.png" alt="Logo-Chimere"/>
+                        </button>
+                    </article>
+                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
+                        <button type="button" class="btn btn-outline-dark">
+                            <img style="width:100%" src="../Pictures/settings.png" alt="Logo-Chimere"/>
+                        </button>
+                    </article>
             </div>
         </div>
     </div>

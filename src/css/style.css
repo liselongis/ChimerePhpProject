@@ -21,13 +21,27 @@ p {
 */
 
 
+/* header */
+header.fixed-header{
+  overflow: hidden !important;
+  position: absolute !important;
+  top: 0 !important;
+  margin-bottom: 100px !important;
+}
+
+
+
+/* menu */
 .bg-dark {
-  overflow: visible !important;
+  overflow: hidden !important;
+  position: absolute !important;
   background-color: #d3c6bd !important;
   position: fixed !important;
   top: 0 !important;
   width: 100% !important;
+  margin-bottom: 100px !important;
 }
+
 
 
 header {
@@ -36,10 +50,14 @@ header {
 
 
 body {
-  background-color: #8b8075   !important;
+  background-color: #EAE6DF   !important;
 }
 
 .formulaire {
   margin-left: auto   !important;
   margin-right: auto   !important;
 }
+
+
+
+

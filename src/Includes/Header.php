@@ -16,50 +16,51 @@
     <body>
 
 
-    <header>
+<header class="fixed-header" >
+
 
 
 <!-- Le menu -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Bijouterie</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item">
-        <a class="nav-link" href="index.php"> Accueil <span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="../View/page1.php"> Page 1</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="../View/page2.php"> Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="../View/page3.php"> Page 3</a>
-      </li>
-
-    </ul>
-
-      <span class="navbar-text actions">
-          <a class="btn btn-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
-          &nbsp;
-          <a class="btn btn-dark" role="button" href="../Controller/login.php">Connexion</a>
-      </span>
-
-  </div>
-</nav>
-
-
-<div class="mx-auto" style="width: 200px;">
-</div>
+      <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand" href="../../">             
+                <img
+                src="../Pictures/Logo-Chimere.png" 
+                alt="Logo-Chimere"
+                height="51px" 
+                width="40px" 
+                />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../../"> Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../View/Page_Fondeur_Mouleur.php"> Fondeur/Mouleur </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../View/Page_Polisseur.php"> Polisseur </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../View/Page_Tailleur.php"> Tailleur </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../View/Page_Sertisseur.php"> Sertisseur </a>
+              </li>
+            </ul>
+              <div class="navbar-text actions">
+                  <a class="btn btn-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
+                  &nbsp;
+                  <a class="btn btn-dark" role="button" href="../Controller/login.php">Connexion</a>
+              </div>
+          </div>
+        </nav>
 
 
-    </header>
+</header>
+
+<div class="p-5 "></div>
