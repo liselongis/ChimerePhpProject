@@ -1,44 +1,30 @@
 <!-- L'en-tête -->
 <?php require '../Includes/header.php'; ?>
 
-<!-- Le corps -->
-
-    <div id="">
+<div id="corps">
         <div class="container-fluid">
-            <div class="row">
-                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
-                        <button type="button" class="btn btn-outline-dark">
-                            <img style="width:100%" src="../Pictures/document.png" alt="Logo-Chimere"/>
-                        </button>
+            <div class="container">
+                <div class="row">
+
+                    <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
+                        <h1> Text 1 </h1>
+                        <p> Hello World <br /> </p>
+                        <button type="button" class="btn btn-outline-dark">Dark Button 1</button>
                     </article>
 
-
-                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
-                        <button type="button" class="btn btn-outline-dark">
-                            <img style="width:100%" src="../Pictures/file.png" alt="Logo-Chimere"/>
-                        </button>
+                    <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
+                        <h1> Text 2 </h1>
+                        <p> Hello World <br /> </p>
+                        <button type="button" class="btn btn-outline-dark">Dark Button 2</button>
                     </article>
-            </div>
-        </div>
-    </div>
 
-    <br>
-    <br>
-    <br>
+                    <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-4">
+                        <h1> Text 3 </h1>
+                        <p> Hello World <br /> </p>
+                        <button type="button" class="btn btn-outline-dark">Dark Button 3</button>
+                    </article>
 
-    <div id="">
-        <div class="container-fluid">
-            <div class="row">
-                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
-                        <button type="button" class="btn btn-outline-dark">
-                            <img style="width:100%" src="../Pictures/past.png" alt="Logo-Chimere"/>
-                        </button>
-                    </article>
-                    <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
-                        <button type="button" class="btn btn-outline-dark">
-                            <img style="width:100%" src="../Pictures/settings.png" alt="Logo-Chimere"/>
-                        </button>
-                    </article>
+                </div>
             </div>
         </div>
     </div>

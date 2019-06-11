@@ -51,6 +51,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="../View/Page_Sertisseur.php"> Sertisseur </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../View/Page_Chef_d_atelier.php"> Chef d'Atelier </a>
+              </li>
             </ul>
               <div class="navbar-text actions">
                   <a class="btn btn-secondary" role="button" href="../Controller/inscription.php">Inscription</a>

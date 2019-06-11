@@ -19,6 +19,10 @@ if (!empty($_SESSION["employe"])) {
         header("Location: ../View/Page_Sertisseur.php");
     }
 
+    elseif($_SESSION["employe"]["id_metier"]==5){
+        header("Location: ../View/Page_Chef_d_atelier.php");
+    }
+
     else
     {
         header("Location: ../View/PageEmploye.php");
