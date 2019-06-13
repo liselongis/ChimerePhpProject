@@ -25,7 +25,7 @@
     <div class="container-fluid">
       <div class="row" style="">
         <div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6" style="">
-          <form class="inscription" method="POST" action="../Controller/inscrire.php">
+          <form class="cDevis" method="POST" action="../Controller/cDevis.php">
 
 
             <div class="form-group"> <label></label>

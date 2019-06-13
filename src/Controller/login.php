@@ -1,5 +1,8 @@
 <!-- L'en-tête -->
-<?php include("../Includes/header.php"); ?>
+<?php include("../Includes/header.php"); 
+session_start();
+include_once "RedirectInit.php";
+?>
 
 
     <div class="container">
