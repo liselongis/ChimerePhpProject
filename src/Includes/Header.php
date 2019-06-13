@@ -23,7 +23,7 @@
 <!-- Le menu -->
 
       <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
-          <a class="navbar-brand" href="../../">             
+          <a class="navbar-brand" >             
                 <img src="../Pictures/Logo-Chimere.png" alt="Logo-Chimere" height="51px" width="40px" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +31,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
+               &nbsp; &nbsp; &nbsp;
               <li class="nav-item">
-                <a class="nav-link" href="../../"> Accueil <span class="sr-only">(current)</span></a>
+                <a class="btn btn-outline-secondary" role="button" href="../../"> Accueil </span></a>
               </li>
             </ul>
             <div class="navbar-text actions">
                 <a class="btn btn-outline-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
                 &nbsp;
-                <a class="btn btn-outline-success" role="button" href="../Controller/login.php">Connexion</a>
                 <a class="btn btn-outline-danger" role="button" href="../Controller/deconnexion.php">Deconnexion</a>
             </div>
           </div>

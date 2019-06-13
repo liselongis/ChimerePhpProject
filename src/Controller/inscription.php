@@ -1,7 +1,6 @@
 <!-- L'en-tête -->
 <?php include("../Includes/header.php");
 session_start();
-include_once "RedirectInit.php";
 ?>
 
 
@@ -24,7 +23,7 @@ $lignes = $r->fetchAll();
 
 
 <center>
-<h1>Inscription</h1>
+    <h1>Inscription</h1>
 </center>
 <br>
 

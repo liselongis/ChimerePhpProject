@@ -33,3 +33,5 @@ if (count($lignes) > 0){
 
 }
 header("Location: login.php?erreur=1");
+
+?>

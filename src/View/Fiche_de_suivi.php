@@ -1,27 +1,38 @@
-<?php include("../Includes/header.php"); ?>
+<!-- L'en-tête -->
+<?php include("../Includes/header.php");
+session_start();
+?>
 
 
-<!-- Le corps -->
- 
-<div id="corps">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <h1>Fiche de suivi</h1>
-                    </div>
-                </div> 
-            </div> 
-    </div>
+<?php /*
+//Je crée une connexion à la BDD
+$db = new PDO(
+  "mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE . ";port=" . Config::PORT,
+  Config::USER,
+  Config::MDP
+);
+//je prépare une requete
+$r = $db->prepare("select * from ************");
+
+//je lance la requete
+$r->execute();
+
+//je récupère le résultat (un tableau de lignes)
+$lignes = $r->fetchAll();
+*/ ?>
 
 
 
-
+<center>
+    <h1>Fiche de suivi</h1>
+</center>
+<br>
 
 
     <div class="container-fluid">
       <div class="row" style="">
         <div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6" style="">
-          <form class="inscription" method="POST" action="../Controller/inscrire.php">
+          <form class="************" method="POST" action="../Controller/************.php">
 
 
         <div class="form-group">

@@ -1,5 +1,7 @@
 <!-- L'en-tête -->
-<?php include("../Includes/header.php"); ?>
+<?php include("../Includes/header.php");
+session_start();
+?>
 
 <!-- Le corps -->
  
@@ -13,10 +15,7 @@
             </div> 
     </div> 
 
-
-
-
-
+    
 <!-- Le corps -->
 
 <div id="">
