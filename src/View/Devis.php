@@ -28,13 +28,38 @@
           <form class="inscription" method="POST" action="../Controller/inscrire.php">
 
 
-            <div class="form-group"> <label>Date</label>
-                <input type="text" class="form-control" placeholder="">
+            <div class="form-group"> <label></label>
+                <input type="Date" class="form-control" placeholder="Date (jj/mm/aaaa)">
             </div>
 
-            <div class="form-group"> <label>Nom</label>
-                <input type="text" class="form-control" placeholder="">
+            <div class="form-group"> <label></label>
+                <input type="Prénom" class="form-control" placeholder="Prénom">
             </div>
+
+            <div class="form-group"> <label></label>
+                <input type="Nom" class="form-control" placeholder="Nom">
+            </div>
+
+            <div class="form-group"> <label></label>
+                <input type="phone" class="form-control" placeholder="Numéro de téléphone">
+            </div>
+
+            <div class="form-group"> <label></label>
+                <input type="email" class="form-control" placeholder="Adresse email">
+            </div>
+
+            <div class="form-group"> <label></label>
+                <input type="Adresse postale" class="form-control" placeholder="Adresse postale">
+            </div>
+
+            <div class="form-group"> <label></label>
+                <input type="Ville" class="form-control" placeholder="Ville">
+            </div>
+
+            <div class="form-group"> <label></label>
+                <input type="CP" class="form-control" placeholder="Code postale">
+            </div>
+
 
             <div class="form-group"> <label>Type</label>
             <br>
@@ -52,16 +77,25 @@
             <br>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Réparation</label>
+                        <label class="form-check-label" for="inlineCheckbox1">Boucles</label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">Création</label>
+                        <label class="form-check-label" for="inlineCheckbox2">Bracelet</label>
+                    </div>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Collier</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Bague</label>
                     </div>
             </div>
 
-            <div class="form-group"> <label>Prix</label>
-                <input type="text" class="form-control" placeholder="">
+            <div class="form-group"> <label></label>
+                <input type="Prix" class="form-control" placeholder="Prix (€)">
             </div>
 
               <br>
