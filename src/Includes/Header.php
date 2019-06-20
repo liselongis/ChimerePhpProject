@@ -33,13 +33,13 @@
             <ul class="navbar-nav mr-auto">
                &nbsp; &nbsp; &nbsp;
               <li class="nav-item">
-                <a class="btn btn-outline-secondary" role="button" href="../../"> Accueil </span></a>
+                <a class="btn btn-dark" role="button" href="../../"> Accueil </span></a>
               </li>
             </ul>
             <div class="navbar-text actions">
-                <a class="btn btn-outline-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
+                <a class="btn btn-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
                 &nbsp;
-                <a class="btn btn-outline-danger" role="button" href="../Controller/deconnexion.php">Deconnexion</a>
+                <a class="btn btn-dark"  role="button" href="../Controller/deconnexion.php">Deconnexion</a>
             </div>
           </div>
       </nav>
