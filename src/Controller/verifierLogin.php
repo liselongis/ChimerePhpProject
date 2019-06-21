@@ -1,7 +1,7 @@
 <?php
 include_once "config.php";
 
-$email_utilisateur=filter_input(INPUT_POST, "email_utilisateur");
+$identifiant=filter_input(INPUT_POST, "identifiant");
 $mdp=filter_input(INPUT_POST, "mdp");
 
 //Je crée une connexion à la BDD
@@ -9,8 +9,8 @@ $db=new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASE.";port=".Confi
 , Config::USER, Config::MDP);
 
 //je prépare une requete
-$r=$db->prepare("select * from UTILISATEUR where email_utilisateur=:email_utilisateur and mdp=:mdp");
-$r->bindParam(":email_utilisateur", $email_utilisateur);
+$r=$db->prepare("select * from UTILISATEUR where login=:identifiant and mdp=:mdp");
+$r->bindParam(":identifiant", $identifiant);
 $hash=md5($mdp);
 $r->bindParam(":mdp", $hash);
 

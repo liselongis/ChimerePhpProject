@@ -37,8 +37,6 @@
               </li>
             </ul>
             <div class="navbar-text actions">
-                <a class="btn btn-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
-                &nbsp;
                 <a class="btn btn-dark"  role="button" href="../Controller/deconnexion.php">Deconnexion</a>
             </div>
           </div>

@@ -19,6 +19,12 @@
     <a class="btn btn-secondary btn-lg btn-block" role="button" href="../Controller/inscription.php">Inscription</a>
 </div>
 
-    
+<br>
+
+<div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6" style="">
+    <a class="btn btn-secondary btn-lg btn-block" role="button" href="">Gestion des utilisateurs</a>
+</div>
+
+
 <!-- Le pied de page -->
 <?php include("../Includes/footer.php"); ?>

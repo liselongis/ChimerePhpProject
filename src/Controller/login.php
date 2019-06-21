@@ -13,9 +13,11 @@ include_once "RedirectInit.php";
   <div class="row" style="">
     <div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6" style="">
       <form method="POST" action="../Controller/verifierLogin.php">
+
         <div class="form-group"> <label></label>
-          <input type="email" name="email_utilisateur" class="form-control" placeholder="Adresse Email">
+          <input type="text" name="identifiant" class="form-control" placeholder="Identifiant">
         </div>
+
         <div class="form-group"> <label></label>
           <input type="password" name="mdp" class="form-control" placeholder="Mot de passe">
         </div>

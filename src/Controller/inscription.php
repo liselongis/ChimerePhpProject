@@ -32,11 +32,11 @@ $lignes = $r->fetchAll();
       <form class="inscription" method="POST" action="../Controller/Inscrire.php">
 
         <div class="form-group"> <label></label>
-          <input type="text" name="prenom" class="form-control" placeholder="Prénom">
+          <input type="text" name="prenom" class="form-control" required="required" placeholder="Prénom">
         </div>
 
         <div class="form-group"> <label></label>
-          <input type="text" name="nom" class="form-control" placeholder="Nom">
+          <input type="text" name="nom" class="form-control" required="required" placeholder="Nom">
         </div>
 
         <div class="form-group">
@@ -49,15 +49,19 @@ $lignes = $r->fetchAll();
         </div>
 
         <div class="form-group"> <label></label>
-          <input type="phone" name="num_tel" class="form-control" placeholder="Téléphone">
+          <input type="phone" name="num_tel" class="form-control" required="required" placeholder="Téléphone">
         </div>
 
         <div class="form-group"> <label></label>
-          <input type="email" name="adresse_email" class="form-control" placeholder="Adresse email">
+          <input type="text" name="identifiant" class="form-control" required="required" placeholder="Identifiant">
         </div>
 
         <div class="form-group"> <label></label>
-          <input type="password" name="mdp" class="form-control" placeholder="Mot de passe">
+          <input type="email" name="adresse_email" class="form-control" required="required" placeholder="Adresse email">
+        </div>
+
+        <div class="form-group"> <label></label>
+          <input type="password" name="mdp" class="form-control" required="required" placeholder="Mot de passe">
         </div>
 
         <br>

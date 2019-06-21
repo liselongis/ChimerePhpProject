@@ -3,6 +3,7 @@
 $prenom=filter_input(INPUT_POST, "prenom");
 $nom=filter_input(INPUT_POST, "nom");
 $id_metier=filter_input(INPUT_POST, "metier");
+$identifiant=filter_input(INPUT_POST, "identifiant");
 $adresse_email=filter_input(INPUT_POST, "adresse_email");
 $num=filter_input(INPUT_POST, "num_tel");
 $mdp=filter_input(INPUT_POST, "mdp");
@@ -22,7 +23,7 @@ $r=$db->prepare("insert into UTILISATEUR(
     values (
         :nom_utilisateur, 
         :prenom_utilisateur, 
-        :login, 
+        :identifiant, 
         :mdp, 
         :email_utilisateur, 
         :num_tel, 
@@ -31,7 +32,7 @@ $r=$db->prepare("insert into UTILISATEUR(
 
 $r->bindParam(":nom_utilisateur", $nom);
 $r->bindParam(":prenom_utilisateur", $prenom);
-$r->bindParam(":login", $adresse_email);
+$r->bindParam(":identifiant", $identifiant);
 $r->bindParam(":mdp", md5($mdp));
 $r->bindParam(":email_utilisateur", $adresse_email);
 $r->bindParam(":num_tel", $num);
@@ -42,8 +43,8 @@ $r->execute();
 
 
 //je prépare une requete
-$r=$db->prepare("select * from UTILISATEUR where email_utilisateur=:email_utilisateur and mdp=:mdp");
-$r->bindParam(":email_utilisateur", $adresse_email);
+$r=$db->prepare("select * from UTILISATEUR where login=:identifiant and mdp=:mdp");
+$r->bindParam(":identifiant", $identifiant);
 $hash=md5($mdp);
 $r->bindParam(":mdp", $hash);
 
