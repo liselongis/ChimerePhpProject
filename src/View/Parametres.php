@@ -15,11 +15,9 @@
 
 <div class="p-5 "></div>
 
-<center>
-    <div class="navbar-text actions">
-        <a class="btn btn-outline-secondary" role="button" href="../Controller/inscription.php">Inscription</a>
-    </div>
-</center>
+<div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6" style="">
+    <a class="btn btn-secondary btn-lg btn-block" role="button" href="../Controller/inscription.php">Inscription</a>
+</div>
 
     
 <!-- Le pied de page -->

@@ -50,7 +50,7 @@ session_start();
             <div class="row">
 
                     <article class="text-center mx-auto col-xs-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 margin-button">
-                        <button type="button" class="btn btn-outline-dark" onclick="window.location.href='../View/Historique.php'">
+                        <button type="button" class="btn btn-outline-dark" onclick="window.location.href='../Controller/Historique.php'">
                             <img style="width:100%" src="../Pictures/past.png" alt="Logo-Chimere"/>
                             Historique
                         </button>

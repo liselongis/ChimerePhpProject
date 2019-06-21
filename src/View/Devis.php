@@ -1,24 +1,12 @@
 <?php include("../Includes/header.php"); ?>
 
 
-
 <!-- Le corps -->
  
-<div id="corps">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <h1>Devis</h1>
-                    </div>
-                </div> 
-            </div> 
-    </div> 
-
-
-
-
-
-
+<center>
+    <h1>Devis</h1>
+</center>
+<br>
 
 
     <div class="container-fluid">

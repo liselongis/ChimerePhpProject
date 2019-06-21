@@ -12,7 +12,23 @@ $db=new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASE.";port=".Confi
 , Config::USER, Config::MDP);
 
 //Je prépare une requete
-$r=$db->prepare("insert into UTILISATEUR(nom_utilisateur, prenom_utilisateur, login, mdp, email_utilisateur, num_tel, id_metier) values (:nom_utilisateur, :prenom_utilisateur, :login, :mdp, :email_utilisateur, :num_tel, :id_metier)");
+$r=$db->prepare("insert into UTILISATEUR(
+        nom_utilisateur, 
+        prenom_utilisateur, 
+        login, mdp, 
+        email_utilisateur, 
+        num_tel, 
+        id_metier) 
+    values (
+        :nom_utilisateur, 
+        :prenom_utilisateur, 
+        :login, 
+        :mdp, 
+        :email_utilisateur, 
+        :num_tel, 
+        :id_metier
+    )");
+
 $r->bindParam(":nom_utilisateur", $nom);
 $r->bindParam(":prenom_utilisateur", $prenom);
 $r->bindParam(":login", $adresse_email);

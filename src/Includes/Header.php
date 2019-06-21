@@ -22,7 +22,7 @@
 
 <!-- Le menu -->
 
-      <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-sm navbar-fixed-top navbar-dark bg-dark">
           <a class="navbar-brand" >             
                 <img src="../Pictures/Logo-Chimere.png" alt="Logo-Chimere" height="51px" width="40px" />
           </a>

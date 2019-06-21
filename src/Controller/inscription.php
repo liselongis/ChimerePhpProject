@@ -4,23 +4,6 @@ session_start();
 ?>
 
 
-<?php
-//Je crée une connexion à la BDD
-$db = new PDO(
-  "mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE . ";port=" . Config::PORT,
-  Config::USER,
-  Config::MDP
-);
-//je prépare une requete
-$r = $db->prepare("select * from METIER");
-
-//je lance la requete
-$r->execute();
-
-//je récupère le résultat (un tableau de lignes)
-$lignes = $r->fetchAll();
-?>
-
 
 <center>
     <h1>Inscription</h1>
