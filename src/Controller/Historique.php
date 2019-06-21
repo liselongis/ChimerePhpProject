@@ -39,7 +39,7 @@ $lignes = $r->fetchAll();
                   <th scope="col">Prenom client</th>
                   </tr>
               </thead>
-              <?php foreach ($lignes as $ligne){   ?>
+              <?php foreach ($lignes as $ligne){ ?>
               <tbody>
                   <tr>
                   <th scope="row"><?php echo $ligne["id_commande"] ?></th>
