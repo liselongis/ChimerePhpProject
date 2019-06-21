@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le :  ven. 17 mai 2019 à 08:55
+-- Généré le :  ven. 21 juin 2019 à 08:39
 -- Version du serveur :  5.7.25
 -- Version de PHP :  7.3.1
 
@@ -30,9 +30,18 @@ CREATE TABLE `CLIENT` (
   `id_client` int(11) NOT NULL,
   `nom_client` varchar(30) NOT NULL,
   `prenom_client` varchar(30) NOT NULL,
-  `email_client` varchar(10) NOT NULL,
+  `email_client` varchar(100) NOT NULL,
   `num_tel` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `CLIENT`
+--
+
+INSERT INTO `CLIENT` (`id_client`, `nom_client`, `prenom_client`, `email_client`, `num_tel`) VALUES
+(1, 'Sueur', 'Mathieu', 'mathieu.sueur@gmail.com', 601234567),
+(2, 'Riaud', 'Valentin', 'val.riaud@gmail.com', 701234567),
+(3, 'Duval', 'Bob', 'bob.duval@gmail.com', 39482283);
 
 -- --------------------------------------------------------
 
@@ -53,6 +62,13 @@ CREATE TABLE `COMMANDE` (
   `id_fiche_suivi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Déchargement des données de la table `COMMANDE`
+--
+
+INSERT INTO `COMMANDE` (`id_commande`, `date_commande`, `date_livraison`, `type_commande`, `facture`, `devis_accepter`, `num_bijoux`, `type_bijoux`, `id_client`, `id_fiche_suivi`) VALUES
+(1, '2019-06-21', '2019-06-22', '1', 1, 1, 1, '1', 1, 3);
+
 -- --------------------------------------------------------
 
 --
@@ -66,9 +82,15 @@ CREATE TABLE `FICHE_SUIVI` (
   `commentaire` varchar(255) NOT NULL,
   `nb_heures` int(11) NOT NULL,
   `id_utilisateur` int(11) NOT NULL,
-  `id_metier` int(11) NOT NULL,
-  `id_commande` int(11) NOT NULL
+  `id_metier` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `FICHE_SUIVI`
+--
+
+INSERT INTO `FICHE_SUIVI` (`id_fiche_suivi`, `date_modif`, `etat`, `commentaire`, `nb_heures`, `id_utilisateur`, `id_metier`) VALUES
+(3, '2019-06-20', '1', '1', 1, 2, 5);
 
 -- --------------------------------------------------------
 
@@ -90,7 +112,8 @@ INSERT INTO `METIER` (`id_metier`, `libelle_metier`, `id_fiche_suivi`) VALUES
 (1, 'Fondeur/Mouleur', NULL),
 (2, 'Polisseur', NULL),
 (3, 'Tailleur', NULL),
-(4, 'Sertisseur', NULL);
+(4, 'Sertisseur', NULL),
+(5, 'Chef d\'Atelier', NULL);
 
 -- --------------------------------------------------------
 
@@ -114,8 +137,9 @@ CREATE TABLE `UTILISATEUR` (
 --
 
 INSERT INTO `UTILISATEUR` (`id_utilisateur`, `nom_utilisateur`, `prenom_utilisateur`, `login`, `mdp`, `email_utilisateur`, `num_tel`, `id_metier`) VALUES
-(1, 'chimere', 'zoro', 'chimere', 'e353722e792f9394a0bed45e2883f232', 'chimere@gmail.com', 48399383, 1),
-(2, 'lego', 'toto', 'chimere2', 'e353722e792f9394a0bed45e2883f232', 'chimere2@gmail.com', 48399383, 2);
+(1, 'chimere', 'zoro', 'chimere', 'e353722e792f9394a0bed45e2883f232', 'chimere@gmail.com', 48399383, 5),
+(2, 'lego', 'toto', 'chimere2', 'e353722e792f9394a0bed45e2883f232', 'chimere2@gmail.com', 48399383, 5),
+(4, 'Riaud', 'Valentin', 'chimere@gmail.com', 'e353722e792f9394a0bed45e2883f232', 'chimere@gmail.com', 762482240, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -141,7 +165,6 @@ ALTER TABLE `COMMANDE`
 ALTER TABLE `FICHE_SUIVI`
   ADD PRIMARY KEY (`id_fiche_suivi`),
   ADD UNIQUE KEY `FICHE_SUIVI_METIER0_AK` (`id_metier`),
-  ADD UNIQUE KEY `FICHE_SUIVI_COMMANDE1_AK` (`id_commande`),
   ADD KEY `FICHE_SUIVI_UTILISATEUR0_FK` (`id_utilisateur`);
 
 --
@@ -163,10 +186,28 @@ ALTER TABLE `UTILISATEUR`
 --
 
 --
+-- AUTO_INCREMENT pour la table `COMMANDE`
+--
+ALTER TABLE `COMMANDE`
+  MODIFY `id_commande` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT pour la table `FICHE_SUIVI`
+--
+ALTER TABLE `FICHE_SUIVI`
+  MODIFY `id_fiche_suivi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT pour la table `METIER`
 --
 ALTER TABLE `METIER`
   MODIFY `id_metier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT pour la table `UTILISATEUR`
+--
+ALTER TABLE `UTILISATEUR`
+  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Contraintes pour les tables déchargées
@@ -183,7 +224,6 @@ ALTER TABLE `COMMANDE`
 -- Contraintes pour la table `FICHE_SUIVI`
 --
 ALTER TABLE `FICHE_SUIVI`
-  ADD CONSTRAINT `FICHE_SUIVI_COMMANDE2_FK` FOREIGN KEY (`id_commande`) REFERENCES `COMMANDE` (`id_commande`),
   ADD CONSTRAINT `FICHE_SUIVI_METIER` FOREIGN KEY (`id_metier`) REFERENCES `METIER` (`id_metier`),
   ADD CONSTRAINT `FICHE_SUIVI_UTILISATEUR0_FK` FOREIGN KEY (`id_utilisateur`) REFERENCES `UTILISATEUR` (`id_utilisateur`);
 
